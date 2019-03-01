@@ -18,3 +18,8 @@ L’entreprise souhaite remplacer son infrastructure réseau vieillissante en la
 * Conde Ibrahima vps651916.ovh.net --> IP : 51.77.203.63
 * Liber Maxime vps651917.ovh.net --> IP : 51.77.203.64
 
+
+## Schéma Logique
+
+
+## Schéma Physique
