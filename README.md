@@ -3,7 +3,10 @@
 
        Entreprise : WoodyToys
 
-L’entreprise qui vous contacte est l’entreprise WoodyToys (WT), qui fabrique de manière artisanale des jouets en bois.
+
+## But du projet :
+
+L’entreprise qui nous contacte est l’entreprise WoodyToys (WT), qui fabrique de manière artisanale des jouets en bois.
 
 L’usine comporte un atelier où sont fabriqués les jouets, un hangar de stockage d’où partent les produits vers les revendeurs, et un bureau où travaillent les employés. L’usine dispose d’une connexion à Internet. En interne, elle dispose d’un ERP Web, uniquement accessible depuis l’intérieur du réseau, qui permet la gestion descontacts clients, de la production, des stocks, et des commandes. La vente des produits s’effectue uniquement en B2B (revendeurs).
 
