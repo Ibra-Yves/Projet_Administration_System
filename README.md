@@ -11,4 +11,10 @@ Dans le cadre de nos études d'informatique à l'EPHEC LLN, nous avons reçu ce 
 
 Il nous est demandé de mettre en place une infrastructure réseaux répondant aux besoins d’une entreprise fictive ("WoodyToys") fabriquante de jouets artisanaux en bois.
 
+## Entreprise : WoodyToys
+* Un outil ERP Web uniquement accessible sur le réseau interne.
+* ERP permet la gestion des contacts clients, des commandes, des stocks et l’organisation de la production
+* Dispose d’un portail Web public présentant ses produits (www.woodytoys.be).
+* D’un site de vente en ligne réservé aux revendeurs (b2b.woodytoys.be). 
+
 
