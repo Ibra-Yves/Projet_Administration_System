@@ -3,7 +3,7 @@
 ## Introduction
 
 Dans le cadre de nos études d'informatique à l'EPHEC LLN, nous avons reçu ce projet pour notre cours d'administration système réseau. Ce projet doit être réalisé par équipe de 3 étudiants. Notre groupe ("groupe 14") est composé de:
-- Ibrahima Conde (_**Ibra-Yves**_)
+- [Ibrahima Conde](https://github.com/Ibra-Yves)
 - Maxime Liber (_**LiberTMx**_)
 - Nicolas Viroux (_**Nicolasviroux2TL1**_)   
 
