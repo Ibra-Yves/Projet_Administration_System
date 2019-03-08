@@ -1,0 +1,258 @@
+:root{
+    --menu-bg-color : #181A12;
+}
+
+.menu {
+    background : #181A12;
+}
+.menu {
+    height: 1%; /* -> 3 */
+    padding: 0.5em;
+    font-size: .9em;
+    text-decoration: none;
+}
+/* Menu */
+.menu {
+    background : var(--menu-bg-color);
+}
+.menu {
+    line-height: 2.5;
+    border-style : solid;
+    border-width : 0.1em;
+    border-color : #181A12;
+    padding: 0.25em 0.5em;
+}
+
+/* ------ */
+/* footer */
+/* ------ */
+#credits {
+    display : block;
+    visibility : hidden;
+}
+
+html {
+    font-size: 100%; /* Voir -> Note 1 à la fin de la feuille de styles. */
+}
+body {
+    margin: 0;
+    padding: 10px 20px; /* Note -> 2 */
+    font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif; /* 3 */
+    font-size: .8em; /* -> 4 */
+    line-height: 1.25; /* -> 5 */
+    color: black;
+    background: white;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 .5em 0; /* -> 6 */
+}
+h1 {
+    font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+    font-weight: normal; /* -> 7 */
+}
+h1 {
+    font-size: 3em; /* -> 8 */
+    font-style: italic;
+}
+h2 {font-size: 1.8em;
+    text-align: center;}
+h3 {font-size: 1.2em;}
+h4 {font-size: 1em;}
+
+/* Listes */
+ul, ol {
+    margin: .75em 0 .75em 24px;
+    padding: 0; /* -> 9 */
+}
+ul {
+    list-style: square;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Paragraphes */
+p {
+    margin: .75em 0;
+}
+li p, blockquote p {
+    margin: .5em 0;
+}
+
+/* Citations */
+blockquote, q {
+    font-size: 1.1em;
+    font-style: italic;
+    font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+}
+blockquote {
+    margin: .75em 0 .75em 24px;
+}
+cite {
+    font-style: italic;
+}
+
+/* Liens */
+
+
+a img {
+    border: none; /* -> 10 */
+}
+
+/* Divers éléments de type en-ligne */
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+    color: dimgray;
+}
+
+
+/* --- STYLES POUR CERTAINS CONTENUS DES GABARITS --- */
+
+pre, code {
+    font-size: 100%;
+    font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New", monospace;
+}
+pre {
+    width: 90%;
+    overflow: auto;
+    overflow-y: hidden;
+    margin: .75em 0;
+    padding: 12px;
+    background: #eee;
+    color: #555;
+}
+pre strong {
+    font-weight: normal;
+    color: black;
+}
+#copyright {
+    margin: 20px 0 5px 0;
+    text-align: center;
+    font-size: .8em;
+    color: white;
+}
+#copyright a {
+    color: white;
+    text-decoration: none;
+}
+#copyright a:hover, #copyright a:focus {
+    text-decoration: underline;
+}
+.cont {
+    font-family: tahoma;
+    font-size : 1.2em;
+    line-height : 1.2em;
+}
+
+section {
+    background-color : white;
+    padding : 1em;
+    border-radius : 3em;
+    margin-top : 1em;
+    border-width:2px;
+    border-style:groove;
+    border-color:red;
+}
+
+
+body {
+    color: #F0E39E;
+    background: #CD853F;
+}
+.menu {
+    color: #FF6533;
+}
+a:hover, a:focus {
+    color: #FF4C00;
+}
+strong {
+    color: #A1B55D;
+}
+
+/* Navigation */
+#navigation {
+    background: #181A12;
+}
+#navigation a {
+    color: #FF6533;
+}
+#navigation a:hover, #navigation a:focus {
+    background: #000000;
+}
+
+/* Contenu principal */
+#contenu {
+    color: #363B29;
+    background: grey;
+    border-radius : 1em;
+}
+#contenu a {
+    color: #332510;
+}
+#contenu a:hover, #contenu a:focus {
+    color: #6E5122;
+}
+#contenu strong {
+    color: #181A12;
+}
+
+body {
+    padding: 20px 50px; /* Voir -> Note 1 ci-dessous */
+}
+
+/* En-tête */
+
+h1
+{
+  font-size: 48px;
+  text-shadow: -1px -1px #f00, 1px 1px #a00, -3px 0 4px #000;
+  font-family:"Segoe print", Arial, Helvetica, sans-serif;
+  color: #dd0000;
+  padding:64px 0 0 0;
+  margin:16px auto;
+  font-weight:lighter;
+  box-shadow:none;  
+  text-align:center;
+  display:block;
+  min-height:10px;
+  min-width:400;
+  max-height:172px;
+  max-width:800px;  
+}
+
+/* Menu de navigation */
+#navigation {
+    width: 18%;
+    float: left; /* -> 2 */
+}
+#navigation ul {
+    margin: 0;
+    padding: 20px 10px;
+    list-style: none;
+}
+#navigation a {
+    display: block;
+    height: 1%; /* -> 3 */
+    padding: 6px 6px 6px 10px;
+    line-height: 1.5;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+/* Contenu */
+#contenu { /* -> 4 */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+#contenu > :first-child {
+    margin-top: 10px;
+}
+#contenu p, #contenu li {
+    line-height: 1.5;
+}
