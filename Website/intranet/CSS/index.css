@@ -1,0 +1,102 @@
+.menu {
+    background : #181A12;
+}
+.menu {
+    line-height: 2.5;
+    border-style : solid;
+    border-width : 0.1em;
+    border-color : #181A12;
+    padding: 0.25em 0.5em;
+}
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 10px 20px;
+    font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif;
+    font-size: .8em;
+    line-height: 1.25; 
+    color: black;
+    background: black;
+}
+
+h1, h2 {
+    margin: 1em 0 .5em 0;
+}
+h1 {
+    font-size: 3em; 
+    font-style: italic;
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+    font-weight: normal;
+}
+
+ul, ol {
+    margin: .75em 0 .75em 24px;
+    padding: 0; /* -> 9 */
+}
+ul {
+    list-style: square;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+/* Citations */
+blockquote, q {
+    font-size: 1.1em;
+    font-style: italic;
+    font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+}
+a img {
+    border: none;
+}
+#copyright {
+    margin: 20px 0 5px 0;
+    text-align: right;
+    font-size: .8em;
+    color: white;
+}
+#copyright a {
+    color: white;
+    text-decoration: none;
+}
+#copyright a:hover, #copyright a:focus {
+    text-decoration: underline;
+}
+.cont {
+    font-family: tahoma;
+    font-size : 1.2em;
+    line-height : 1.2em;
+}
+section {
+    background-color : black;
+    padding : 1em;
+    border-radius : 0.4em;
+    margin-top : 1em;
+}
+
+body {
+    color: #F0E39E;
+    background: red;
+}
+
+a:hover, a:focus {
+    color: #FF4C00;
+}
+#contenu {
+    color: #363B29;
+    background: black;
+    border-radius : 1em;
+}
+#contenu a {
+    color: #332510;
+}
+body {
+    padding: 20px 50px;
+}
+
+#entete {
+    color : black;
+    padding: 20px 0;
+}
