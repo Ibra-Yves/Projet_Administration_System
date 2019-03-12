@@ -1,0 +1,4 @@
+zone "wt14.ephec-ti.be"{ 
+   type master; 
+   file "/etc/bind/zones/db.wt14.ephec-ti.be"; 
+  };
