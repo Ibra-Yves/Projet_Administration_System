@@ -11,15 +11,17 @@ $ORIGIN wt14.ephec-ti.be.
                                 1w      ; expire
                                 3h)     ;
 
-        IN      NS              ns1.wt14.ephec-ti.be.           
+;NS RECORDS
+        IN      NS              ns1.wt14.ephec-ti.be.           ;Utilisé pour définir quels serveurs répondent pour cette zone.
 
 
-ns1     IN      A       51.77.203.64                    
+;A Records
+ns1     IN      A       51.77.203.64                    ; Cet enregistrement fait correspondre une adresse IP à un nom de machine.
 
 
 ;Configuration WEB
 
-web             IN      A       51.77.203.64
+web             IN      A       51.77.203.64 ; VPS - MAXIME
 
 
 www             IN      CNAME   web
