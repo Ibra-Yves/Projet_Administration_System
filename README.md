@@ -4,7 +4,7 @@
 
 Dans le cadre de nos études d'informatique à l'EPHEC LLN, nous avons reçu ce projet pour notre cours d'administration système réseau. Ce projet doit être réalisé par équipe de 3 étudiants. Notre groupe ("groupe 14") est composé de:
 - [_**CONDE Ibrahima**_](https://github.com/Ibra-Yves)
-- [_**LIBERT Maxime**_](https://github.com/LiberTMx)
+- [_**LIBER Maxime**_](https://github.com/LiberTMx)
 - [_**VIROUX Nicolas**_](https://github.com/VirouxNicolas)   
 
 ## But du projet : 
