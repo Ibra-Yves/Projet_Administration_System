@@ -1,3 +1,4 @@
+
 ;
 ;BIND File
 ;
@@ -13,7 +14,7 @@ $ORIGIN wt14.ephec-ti.be.
 
 ;NS RECORDS
         IN      NS              ns1.wt14.ephec-ti.be.           ;Utilisé pour définir quels serveurs répondent pour cette zone.
-
+        IN      MX      10      mail.wt14.ephec-ti.be.
 
 ;A Records
 ns1     IN      A       51.77.203.64                    ; Cet enregistrement fait correspondre une adresse IP à un nom de machine.
@@ -22,8 +23,13 @@ ns1     IN      A       51.77.203.64                    ; Cet enregistrement fai
 ;Configuration WEB
 
 web             IN      A       51.77.203.64 ; VPS - MAXIME
-
-
 www             IN      CNAME   web
 b2b             IN      CNAME   web
 intranet        IN      CNAME   web
+
+;configuration MAIL
+
+mail            IN      A       51.77.203.86
+smtp            IN      CNAME   mail
+pop3            IN      CNAME   mail
+imap            IN      CNAME   mail
