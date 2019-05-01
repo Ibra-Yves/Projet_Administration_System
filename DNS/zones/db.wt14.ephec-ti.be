@@ -1,4 +1,3 @@
-
 ;
 ;BIND File
 ;
@@ -23,13 +22,17 @@ ns1     IN      A       51.77.203.64                    ; Cet enregistrement fai
 ;Configuration WEB
 
 web             IN      A       51.77.203.64 ; VPS - MAXIME
+
+
 www             IN      CNAME   web
 b2b             IN      CNAME   web
 intranet        IN      CNAME   web
 
 ;configuration MAIL
 
-mail            IN      A       51.77.203.86
+mail            IN      A       51.77.203.64
 smtp            IN      CNAME   mail
 pop3            IN      CNAME   mail
 imap            IN      CNAME   mail
+$INCLUDE /etc/bind/Kwt14.ephec-ti.be.+008+07087.key
+$INCLUDE /etc/bind/Kwt14.ephec-ti.be.+008+45228.key
