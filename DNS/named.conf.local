@@ -7,5 +7,11 @@
 //include "/etc/bind/zones.rfc1918";
 zone "wt14.ephec-ti.be." {
         type master;
+        // zone : normale
+        //file "/etc/bind/zones/db.ephec-ti.be";
+        // zone : signed by DNSSEC
         file "/etc/bind/zones/db.wt14.ephec-ti.be";
+        allow-transfer { 213.186.33.199; };
+        allow-query { any; };
+        notify yes;
 };
