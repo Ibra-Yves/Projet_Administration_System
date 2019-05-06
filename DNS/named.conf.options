@@ -1,10 +1,10 @@
-acl goodclients {
+acl company {
         localhost;
-        localnets;
         51.77.203.86;
         51.77.203.64;
         51.77.203.63;
 };
+
 options {
         directory "/var/cache/bind";
 
@@ -22,13 +22,18 @@ options {
         // };
 
         recursion yes;
-        allow-query { goodclients; };
+       // allow-query { goodclients; };
 
         //========================================================================
         // If BIND logs error messages about the root key being expired,
         // you will need to update your keys.  See https://www.isc.org/bind-keys
-        //========================================================================
-        dnssec-validation auto;
+        //=
+        // DNSSEC
+        dnssec-enable yes;
+        dnssec-validation yes;
+        dnssec-lookaside auto;=======================================================================
+
+
 
         auth-nxdomain no;    # conform to RFC103
         listen-on {any;};
