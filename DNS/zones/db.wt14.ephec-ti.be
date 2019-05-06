@@ -30,7 +30,7 @@ intranet        IN      CNAME   web
 
 ;configuration MAIL
 
-mail            IN      A       51.77.203.63
+mail            IN      A       51.77.203.86
 smtp            IN      CNAME   mail
 pop3            IN      CNAME   mail
 imap            IN      CNAME   mail
