@@ -2,7 +2,7 @@
 <?php
 $servername = "51.77.203.64";
 $username = "root";
-$password = "root";
+$password = "*******";
 $dbname = "user";
 
 // Create connection
