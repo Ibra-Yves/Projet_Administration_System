@@ -27,7 +27,7 @@ smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
 # See /usr/share/doc/postfix/TLS_README.gz in the postfix-doc package for
 # information on enabling SSL in the smtp client.
 
-smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_una                                                                                        uth_destination
+smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_unauth_destination
 myhostname = wt14.ephec-ti.be
 mydomain = wt14.ephec-ti.be
 alias_maps = hash:/etc/aliases
@@ -55,3 +55,15 @@ smtpd_tls_loglevel = 1
 smtpd_tls_received_header = yes
 smtpd_tls_session_cache_timeout = 3600s
 
+policyd-spf_time_limit = 3600
+smtpd_recipient_restrictions =
+   permit_mynetworks,
+   permit_sasl_authenticated,
+   reject_unauth_destination,
+   check_policy_service unix:private/policyd-spf
+
+# Milter configuration
+milter_default_action = accept
+milter_protocol = 6
+smtpd_milters = local:/opendkim/opendkim.sock
+non_smtpd_milters = $smtpd_milters
