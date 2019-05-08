@@ -41,3 +41,4 @@ default._domainkey      IN      TXT     ( "v=DKIM1; k=rsa; "
 _dmarc          IN      TXT     ( "v=DMARC1; p=none; pct=100; fo=1; rua=mailto:dmarck-reports@wt14.ephec-ti.be")
 $INCLUDE /etc/bind/Kwt14.ephec-ti.be.+008+34099.key
 $INCLUDE /etc/bind/Kwt14.ephec-ti.be.+008+59979.key
+$INCLUDE /etc/bind/zones/db.wt14.ephec-ti.be.signed
