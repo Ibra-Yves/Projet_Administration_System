@@ -1,10 +1,30 @@
-//
 // Do any local configuration here
-//
-
 // Consider adding the 1918 zones here, if they are not used in your
 // organization
 //include "/etc/bind/zones.rfc1918";
+
+acl reseau_local {
+	localhost;
+	51.77.203.63;
+	51.77.203.64;
+};
+
+view "internal"{
+	match-clients {reseau_local; };
+	recursion yes;
+	allow-recursion{reseau_local; };
+	
+	zone "wt14.ephec-ti.be" {
+		type master;
+		file "/etc/bind/db.local.wt14.ephec-ti.be";
+	};
+};
+
+view "external" {
+	match-clients {any; };
+	allow-query { any; };
+	recursion no;
+	
 zone "wt14.ephec-ti.be." {
         type master;
         // zone : normale
@@ -14,4 +34,5 @@ zone "wt14.ephec-ti.be." {
         allow-transfer { 213.186.33.199; };
         allow-query { any; };
         notify yes;
+};
 };
