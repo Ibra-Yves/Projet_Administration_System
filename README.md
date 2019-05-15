@@ -14,7 +14,7 @@ Il nous est demandé de mettre en place une infrastructure réseaux répondant a
 ## Entreprise : WoodyToys
 * Un outil ERP Web uniquement accessible sur le réseau interne.
 * ERP permet la gestion des contacts clients, des commandes, des stocks et l’organisation de la production
-* Dispose d’un portail Web public présentant ses produits [www.wt14.ephec-ti.be].
+* Dispose d’un portail Web public présentant ses produits www.wt14.ephec-ti.be.
 * D’un site de vente en ligne réservé aux revendeurs [b2b.wt14.ephec-ti.be](https://b2b.wt14.ephec-ti.be/). 
 
 
