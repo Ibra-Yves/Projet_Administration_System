@@ -27,7 +27,6 @@ web             IN      AAAA    2001:41d0:404:200::1332
 
 www             IN      CNAME   web
 b2b             IN      CNAME   web
-intranet        IN      CNAME   web
 
 ;configuration MAIL
 
