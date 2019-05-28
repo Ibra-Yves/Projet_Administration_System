@@ -2,16 +2,7 @@ FROM debian
 
 RUN apt update && apt upgrade -y 
 RUN apt install -y \
-  build-essential \
   wget \
-  openssl \
-  libxml2-dev \
-  libncurses5-dev \
-  uuid-dev \
-  sqlite3 \
-  libsqlite3-dev \
-  pkg-config \
-  libjansson-devÂ\
   vim
   
 WORKDIR /usr/local/src/
