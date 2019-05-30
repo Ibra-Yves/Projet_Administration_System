@@ -3,12 +3,14 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+// Cette access liste permet l'accès à notre intranet aux adresses suivantes
 acl reseau_local {
 	localhost;
 	51.77.203.63;
 	51.77.203.64;
 };
 
+//Pour l'intranet
 view "internal"{
 	match-clients {reseau_local; };
 	recursion yes;
@@ -20,16 +22,14 @@ view "internal"{
 	};
 };
 
+//Accessible a tous
 view "external" {
 	match-clients {any; };
 	allow-query { any; };
 	recursion no;
 	
 zone "wt14.ephec-ti.be." {
-        type master;
-        // zone : normale
-        //file "/etc/bind/zones/db.ephec-ti.be";
-        // zone : signed by DNSSEC
+        type master; 
         file "/etc/bind/zones/db.wt14.ephec-ti.be";
         allow-transfer { 213.186.33.199; };
         allow-query { any; };
