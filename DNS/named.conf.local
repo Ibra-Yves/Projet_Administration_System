@@ -1,38 +1,36 @@
-// Do any local configuration here
-// Consider adding the 1918 zones here, if they are not used in your
-// organization
-//include "/etc/bind/zones.rfc1918";
 
-// Cette access liste permet l'accès à notre intranet aux adresses suivantes
-acl reseau_local {
-	localhost;
-	51.77.203.63;
-	51.77.203.64;
+acl internals {
+    localhost;
+    51.77.203.64;
+    51.77.203.63;
+    2001:41d0:404:200::1332/128; //ipv6 MAXIME
+
 };
 
-//Pour l'intranet
-view "internal"{
-	match-clients {reseau_local; };
-	recursion yes;
-	allow-recursion{reseau_local; };
-	
-	zone "wt14.ephec-ti.be" {
-		type master;
-		file "/etc/bind/db.local.wt14.ephec-ti.be";
-	};
+view internal {
+    match-clients { internals; };
+    recursion yes;
+    allow-recursion { internals; };
+        zone "wt14.ephec-ti.be" {
+        type master;
+        file "/etc/bind/db.local.wt14.ephec-ti.be";
+    };
+
+    //mettre la zone pour le reverse
+    zone "203.77.51.in-addr.arpa." {
+    type master;
+    file "/etc/bind/db.203.77.51.in-addr.arpa";
+        };
 };
 
-//Accessible a tous
-view "external" {
-	match-clients {any; };
-	allow-query { any; };
-	recursion no;
-	
-zone "wt14.ephec-ti.be." {
-        type master; 
-        file "/etc/bind/zones/db.wt14.ephec-ti.be";
-        allow-transfer { 213.186.33.199; };
-        allow-query { any; };
-        notify yes;
-};
+view external {
+    match-clients { any; };
+    zone "wt14.ephec-ti.be" {
+        type master;
+        file "/etc/bind/db.wt14.ephec-ti.be";
+    };
+    zone "203.77.51.in-addr.arpa." {
+    type master;
+    file "/etc/bind/db.203.77.51.in-addr.arpa";
+        };
 };
