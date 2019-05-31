@@ -3,8 +3,10 @@ FROM ubuntu
 
 #mettre à jour / ne pas travailler en interface
 #gnupg permet la transmission de messages électroniques signés et chiffrés
+RUN apt-get update
  && DEBIAN_FRONTEND=noninteractive apt-get install -y gnupg \
  && apt-key adv --fetch-keys http://www.webmin.com/jcameron-key.asc \
+ && apt-get nano
  && echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list
 
 #on copie les clés téléchargées "trusted.gpg" 
