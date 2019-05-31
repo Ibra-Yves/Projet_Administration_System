@@ -1,5 +1,6 @@
 FROM ubuntu
 
+#installation de Samba
 RUN apt-get update \ 
 	&& apt-get -y install samba \
 	&& apt-get -y install samba-common-bin \
