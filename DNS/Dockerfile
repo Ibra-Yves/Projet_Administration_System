@@ -23,6 +23,7 @@ RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes \
 
 COPY entrypoint.sh /sbin/entrypoint.sh
 
+#modification des permissions 
 RUN chmod 755 /sbin/entrypoint.sh
 
 EXPOSE 53/udp 53/tcp 
