@@ -1,8 +1,13 @@
+#image Ubuntu
 FROM UBUNTU
 
+
+#creation de groupe
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 
+#mise à jour du container et suppression des repertoires et fichiers
 RUN apt-get update && apt-get install -y --no-install-recommends gnupg dirmngr && rm -rf /var/lib/apt/lists/*
+
 
 RUN set -x \
 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* \
@@ -17,8 +22,10 @@ RUN set -x \
 	&& gosu nobody true \
 	&& apt-get purge -y --auto-remove ca-certificates wget
 
+
 RUN mkdir /docker-entrypoint-initdb.d
 
+#mise à jour et precision sur les paquets qui seront installés
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		pwgen \
 		openssl \
