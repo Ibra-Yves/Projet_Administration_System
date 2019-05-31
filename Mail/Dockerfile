@@ -18,6 +18,7 @@ COPY ./10-mail.conf /etc/dovecot/conf.d/
 COPY ./10-mail.conf /etc/dovecot/conf.d/
 
 
-
+#Ports exposes
 EXPOSE 25 143 993 110 995 
-CMD service dovecot restart && service postfix restart
+
+CMD ["service dovecot restart && service postfix restart"]
