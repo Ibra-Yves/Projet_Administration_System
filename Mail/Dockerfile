@@ -11,6 +11,8 @@ RUN apt-get update -y  \
 &&rm /etc/dovecot/conf.d/10-mail.conf
 &&rm /etc/dovecot/conf.d/10-auth.conf
 &&adduser contact
+
+#copie vps vers le container
 COPY ./main.cf /etc/postfix/
 COPY ./10-ssl.conf /etc/dovecot/conf.d/
 COPY ./10-master.conf /etc/dovecot/conf.d/
