@@ -1,0 +1,17 @@
+$TTL 604800
+$ORIGIN 203.77.51.in-addr.arpa.
+@               IN      SOA     ns1.wt14.ephec-ti.be. root.wt14.ephec-ti.be. (
+                                        1        ;serial
+                                        3H       ; refresh
+                                        15H      ; retry
+                                        1w       ; expire
+                                        3H)      ;
+
+
+@                       IN      NS              ns1.wt14.ephec-ti.be.
+64                      IN      PTR             ns1.wt14.ephec-ti.be.
+
+64                      IN      PTR             mail.wt14.ephec-ti.be.
+64                      IN      PTR             www.wt14.ephec-ti.be.
+64                      IN      PTR             b2b.wt14.ephec-ti.be.
+64                      IN      PTR             intranet.wt14.ephec-ti.be.
