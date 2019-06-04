@@ -54,7 +54,7 @@ RUN groupadd directeur \
 COPY ./smb.conf /etc/samba/	 
 
 #On expose les ports necessaires
-EXPOSE 140 446
+EXPOSE 445 139
 
 #services samba 
 CMD service smbd start && service nmbd start  ; while true ; do sleep 100; done;
