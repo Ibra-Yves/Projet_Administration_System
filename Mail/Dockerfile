@@ -17,7 +17,7 @@ COPY ./main.cf /etc/postfix/
 COPY ./10-ssl.conf /etc/dovecot/conf.d/
 COPY ./10-master.conf /etc/dovecot/conf.d/
 COPY ./10-mail.conf /etc/dovecot/conf.d/
-COPY ./10-mail.conf /etc/dovecot/conf.d/
+
 
 
 #Ports exposes
