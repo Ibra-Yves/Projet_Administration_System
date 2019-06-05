@@ -57,4 +57,4 @@ COPY ./smb.conf /etc/samba/
 EXPOSE 445 139
 
 #services samba 
-CMD service smbd start && service nmbd start  ; while true ; do sleep 100; done;
+CMD service smbd start && service nmbd start  
