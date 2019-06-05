@@ -27,6 +27,6 @@ VOLUME /etc/asterisk
 EXPOSE 5060/udp
 EXPOSE 5060/tcp
 EXPOSE 4569/udp
-EXPOSE 16384-16394/udp
+EXPOSE 4569/tcp
 
 CMD ["asterisk", "-f"]
