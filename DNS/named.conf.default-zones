@@ -1,4 +1,3 @@
-
 view "default" {
         // prime the server with knowledge of the root servers
         zone "." {
