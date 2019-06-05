@@ -9,6 +9,7 @@
 
 #   Add *****SPAM***** to the Subject header of spam e-mails
 #
+#Pour ajouter un tag dans le sujet d’un mail considéré comme un spam 
  rewrite_header Subject *****SPAM*****
 
 
