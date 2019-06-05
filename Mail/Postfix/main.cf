@@ -43,6 +43,7 @@ inet_interfaces = all
 inet_protocols = all
 home_mailbox = Maildir/
 mailbox_command =
+#authentification ( sasl)
 smtpd_sasl_type = dovecot
 smtpd_sasl_path = private/auth
 smtpd_sasl_auth_enable = yes
