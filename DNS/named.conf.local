@@ -1,4 +1,3 @@
-
 acl internals {
     localhost;
     51.77.203.64;
@@ -14,7 +13,12 @@ view internal {
         zone "wt14.ephec-ti.be" {
         type master;
         file "/etc/bind/db.local.wt14.ephec-ti.be";
+       // file "/etc/bind/db.wt14.ephec-ti.be.signed";
+        allow-transfer { 213.186.33.199; };
+        allow-query { any; };
+        notify yes;
     };
+
 
     //mettre la zone pour le reverse
     zone "203.77.51.in-addr.arpa." {
@@ -29,6 +33,7 @@ view external {
         type master;
         file "/etc/bind/db.wt14.ephec-ti.be";
     };
+
     zone "203.77.51.in-addr.arpa." {
     type master;
     file "/etc/bind/db.203.77.51.in-addr.arpa";
