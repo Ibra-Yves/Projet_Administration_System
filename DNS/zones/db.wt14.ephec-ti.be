@@ -1,4 +1,3 @@
-
 ;
 ;BIND File
 ;
@@ -47,3 +46,7 @@ sip.wt14.ephec-ti.be.   IN      A       51.77.203.64
 sip.wt14.ephec-ti.be.   IN      AAAA    2001:41d0:404:200::1332
 _sip._udp               IN SRV 0 0 5060 sip.wt14.ephec-ti.be.
 _sip._tcp               IN SRV 0 0 5060 sip.wt14.ephec-ti.be.
+
+$INCLUDE /etc/bind/Kwt14.ephec-ti.be.+008+44655.key
+$INCLUDE /etc/bind/Kwt14.ephec-ti.be.+008+45862.key
+$INCLUDE /etc/bind/db.wt14.ephec-ti.be.signed
