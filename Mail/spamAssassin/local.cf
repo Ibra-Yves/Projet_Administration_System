@@ -32,6 +32,7 @@
 
 #   Set the threshold at which a message is considered spam (default: 5.0)
 #
+# Plus cette valeur est faible, plus le filtre est agressif. 
  required_score 5.0
 
 
